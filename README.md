@@ -16,15 +16,14 @@
 ---
 
 ## 📂 Projetos em Destaque  
-🔹 [silva](https://github.com/odair304-sketch/silva) – Sistema Bancário em C  
+🔹 [silva](https://github.com/odair304-sketch/silva) – Sistema Bancáro
 🔹 Dashboard de Vendas – Power BI  
 🔹 Scripts SQL – Consultas e relatórios  
 
 ---
 
 ## 📊 Estatísticas do GitHub  
-![Odair GitHub stats](https://github-readme-stats.vercel.app/api?username=odair304-sketch&show_icons=true&theme=radical)  
-
+https://github.com/odair304-sketch/silva/edit/main/README.md#L26C21-L26C122
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=odair304-sketch&layout=compact&theme=radical)  
 
 ---
