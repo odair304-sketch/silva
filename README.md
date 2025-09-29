@@ -30,7 +30,7 @@ https://github.com/odair304-sketch/silva/edit/main/README.md#L26C21-L26C122
 
 ## 📫 Onde me encontrar  
 - 🔗 [LinkedIn](https://www.linkedin.com/in/odair-silva-de-souza-569011170)  
-- 📧odair304-sketch/silva  
+- 📧https://github.com/odair304-sketch/silva/blob/main/README.md?plain=1
 
 ---
 
