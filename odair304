@@ -1,0 +1,60 @@
+#!/bin/bash
+# deploy.sh — Script automático de commits e publicação no GitHub Pages
+# Autor: odair304
+# Repositório: Projeto_HTML5_Semantico
+# ------------------------------------------
+
+# Parar o script em caso de erro
+set -e
+
+# 1. Inicializa repositório Git (caso ainda não tenha sido feito)
+echo "🔧 Inicializando repositório Git..."
+git init
+
+git branch -M main
+
+echo "📁 Adicionando arquivos..."
+git add .
+
+# 2. Primeiro commit — entrega inicial
+commit_msg="chore: entrega 1 — estrutura HTML5 semântica, formulários e assets"
+echo "💬 Criando commit inicial: $commit_msg"
+git commit -m "$commit_msg"
+
+# 3. Adiciona remoto (caso ainda não exista)
+if ! git remote | grep origin > /dev/null; then
+  echo "🌐 Adicionando remoto origin..."
+  git remote add origin git@github.com:odair304/Projeto_HTML5_Semantico.git
+else
+  echo "✅ Remoto origin já configurado."
+fi
+
+# 4. Envia para GitHub
+
+echo "🚀 Enviando arquivos para GitHub (branch main)..."
+git push -u origin main || echo "⚠️ Verifique se você tem acesso SSH configurado."
+
+# 5. Commits adicionais sugeridos (comentados — habilite conforme precisar)
+: '
+# git add js/masks.js cadastro.html
+# git commit -m "feat(form): adicionar máscaras para CPF, telefone e CEP"
+
+# git add css/style.css
+# git commit -m "fix: ajustar responsividade e contraste"
+
+# git add images/
+# git commit -m "perf(images): otimização e adição de WebP"
+
+git push
+'
+
+# 6. Criação da branch gh-pages (opcional)
+echo "📦 Criando branch gh-pages para GitHub Pages..."
+git checkout -b gh-pages || echo "⚠️ Branch gh-pages já existe."
+git push -u origin gh-pages || echo "⚠️ Branch gh-pages já publicada."
+
+echo "✅ Branch gh-pages criada e publicada."
+
+echo "🌍 Acesse em breve: https://github.com/odair304-sketch/silva/new/odair304-sketch-patch-1
+
+echo "🟢 Concluído!"
