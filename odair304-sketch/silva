@@ -1,0 +1,35 @@
+# 🌐 Projeto Final - Desenvolvimento Front-End para Web
+
+## 📋 Descrição
+Este projeto consolida todo o aprendizado desenvolvido ao longo do curso, aplicando práticas profissionais de **HTML5, CSS3, JavaScript**, **acessibilidade digital (WCAG 2.1 AA)** e **versionamento com Git/GitHub**.  
+O sistema foi otimizado para produção e publicado em ambiente real (GitHub Pages).
+
+---
+
+## 🧱 Estrutura do Projeto
+- **HTML5 Semântico:** marcação estruturada e organizada;
+- **CSS3 Responsivo:** uso de Flexbox e Grid;
+- **JavaScript Interativo:** manipulação do DOM e eventos;
+- **Design Acessível:** suporte a teclado, leitores de tela e alto contraste.
+
+---
+
+## ♿ Acessibilidade (WCAG 2.1 Nível AA)
+- ✅ Navegação completa por teclado (`Tab`, `Enter`, `Esc`);
+- ✅ Textos e elementos com contraste mínimo de **4.5:1**;
+- ✅ Uso de `aria-label`, `role` e `alt` em elementos visuais;
+- ✅ Estrutura semântica para leitores de tela;
+- ✅ Alternância de **modo escuro** e **alto contraste**.
+
+```html
+<button id="toggle-contrast">Alternar contraste</button>
+<script>
+  document.getElementById('toggle-contrast').addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+
+
+git clone https://github.com/odair304-sketch/silva.git
+cd silva
+start index.html
